@@ -84,60 +84,54 @@ a:hover {
   text-decoration: none !important;
 }
 
+.contactRight__textarea::-webkit-input-placeholder,
 input[type="text"]::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea::-moz-placeholder,
 input[type="text"]::-moz-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:-moz-placeholder,
 input[type="text"]:-moz-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:-ms-input-placeholder,
 input[type="text"]:-ms-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:focus::-webkit-input-placeholder,
 input[type="text"]:focus::-webkit-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:focus::-moz-placeholder,
 input[type="text"]:focus::-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:focus:-moz-placeholder,
 input[type="text"]:focus:-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
+.contactRight__textarea:focus:-ms-input-placeholder,
 input[type="text"]:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-input[type="text"]::-moz-placeholder {
-  color: #717171;
-  font-size: 14px;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-  color: #717171;
-  font-size: 14px;
-}
-
-input[type="text"]:-ms-input-placeholder {
-  color: #717171;
-  font-size: 14px;
-}
 
 .flex {
   display: -webkit-box;
@@ -185,6 +179,8 @@ Start Header
   padding-top: 73px;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
+  z-index: 50;
 }
 
 .logo {
@@ -202,6 +198,10 @@ Start Header
   top: 47px;
   right: 172px;
   z-index: 10;
+}
+
+.bgHeader {
+  width: 1920px;
 }
 
 .headerMenu {
@@ -294,6 +294,8 @@ Start worldTravel
   padding-top: 140px;
 }
 
+.popupBlock__title,
+.contact__title,
 .ourService__title,
 .footerTopRight__title,
 .selectedTours__title,
@@ -692,3 +694,183 @@ End ourService
 .footer2 .footerTop {
   padding-top: 77px;
 }
+
+/*
+Start contact
+#############*/
+.contact {
+  width: 1644px;
+  margin: 70px auto;
+}
+
+.contactLeft {
+  width: 785px;
+}
+
+.contactRight {
+  width: 805px;
+}
+
+.contactSection__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  line-height: 106%;
+  margin-bottom: 10px;
+}
+
+.contactSection {
+  margin-bottom: 40px;
+}
+
+.contactSection__desc {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contact__title {
+  margin-bottom: 40px;
+}
+
+.contactSectionList {
+  width: 550px;
+  margin-top: 20px;
+}
+
+.contactSectionList li {
+  margin-bottom: 10px;
+}
+
+.contactSectionList li span {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contactInfo {
+  margin-top: 150px;
+}
+
+.contactInfo__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+}
+
+.contactInfo__btn {
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 65px;
+  background: url('../images/icon5.svg') no-repeat center;
+  margin-top: 50px;
+  color: #ffffff;
+  font: normal bold 22px 'Montserrat', sans-serif;
+}
+
+.contactRight input {
+  width: 100%;
+  height: 65px;
+  border: 1px solid #ffffff;
+  background: none;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contactRight__textarea::-moz-placeholder,
+.contactRight input[type="text"]::-moz-placeholder {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contactRight__textarea::-webkit-input-placeholder,
+.contactRight input[type="text"]::-webkit-input-placeholder {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contactRight__textarea:-ms-input-placeholder,
+.contactRight input[type="text"]:-ms-input-placeholder {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.contactRight__textarea {
+  resize: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 100%;
+  background: none;
+  height: 570px;
+  padding: 30px;
+}
+
+.contact__btn {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url('../images/icon6.svg') no-repeat center;
+  height: 65px;
+  margin-top: 20px;
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+/*
+End contactLeft
+############*/
+
+/*
+Start popupBlock
+#############*/
+.popupBlock {
+  background: #ffffff;
+  width: 530px;
+}
+
+.popupBlock__title{
+  color: #434337;
+  font-size: 65px;
+  text-align: center;
+}
+
+.popupBlockForm {
+  width: 440px;
+  margin: 50px auto 0;
+}
+
+.popupBlockForm input {
+  border: 1px solid #434337;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 13px;
+  padding-left: 30px;
+  color: #434337;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.popupBlockForm__btn {
+  margin-top: 33px;
+  height: 65px;
+  width: 100%;
+  background: url('../images/icon7.svg') no-repeat center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  color: #434337;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.popupBlockForm__btn:hover {
+  color: #fff;
+  background: url('../images/icon8.svg') no-repeat center;
+  background-size: cover;
+}
+
+/*
+End popupBlock
+############*/

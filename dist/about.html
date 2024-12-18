@@ -8,7 +8,7 @@
     <meta content=" " name="keywords">
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/tel.css" rel="stylesheet">
+    <link href="css/fancybox.css" rel="stylesheet">
 
     <title>О нас</title>
 </head>
@@ -51,7 +51,20 @@
 
             <div class="headerRight flex">
                 <a href="tel:+7 (915) 121-21-27" class="headerRight__phone">+7 (915) 121-21-27</a>
-                <a href="#" class="headerRight__btn flex">Заказать звонок</a>
+                <a href="#" class="headerRight__btn flex" data-fancybox="" data-src="#hidden-content">Заказать звонок</a>
+
+                <div class="popupBlock" style="display: none;" id="hidden-content">
+                    <h2 class="popupBlock__title">Заказать звонок</h2>
+
+                    <form action="" class="popupBlockForm">
+                        <input placeholder="Ваше имя" type="text">
+                        <input placeholder="Ваш телефон" type="text">
+                        <input placeholder="Код с картинки" type="text">
+                        <img src="images/capcha.png" alt="" class="popupBlockForm__img" loading="lazy">
+
+                        <a href="#" class="popupBlockForm__btn flex">Отправить</a>
+                    </form>
+                </div>
 
                 <a href="" class="headerRight__btn2">
                     <img src="images/icon2.svg" alt="" loading="lazy">
@@ -360,7 +373,7 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/migrate.js"></script>
-<script src="js/tel.js"></script>
+<script src="js/fancybox.js"></script>
 <script src="js/script.js"></script>
 
 </body>
