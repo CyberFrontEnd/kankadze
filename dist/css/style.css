@@ -187,6 +187,10 @@ Start Header
   justify-content: space-between;
 }
 
+.logo {
+  position: relative;
+}
+
 .header__img2,
 .header__img {
   position: absolute;
@@ -290,6 +294,7 @@ Start worldTravel
   padding-top: 140px;
 }
 
+.ourService__title,
 .footerTopRight__title,
 .selectedTours__title,
 .worldTravelLeft__title {
@@ -553,3 +558,137 @@ Start footer
 /*
 End footer
 ############*/
+
+/*
+Start bgHeader
+#############*/
+.bgHeader:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url('../images/bg4.png') no-repeat top center;
+  background-size: cover;
+  height: 312px;
+}
+
+/*
+End bgHeader
+############*/
+
+/*
+Start breadcrumb
+#############*/
+.breadcrumb {
+  margin-top: 180px;
+  background: url('../images/icon4.svg') no-repeat left;
+  background-size: contain;
+  height: 40px;
+  padding-top: 6px;
+}
+
+.bread {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+.bread li a,
+.bread li span {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.bread li span:before {
+  content: "";
+  display: block;
+  width: 20px;
+  background: #ffffff;
+  height: 1px;
+  margin: 0 10px;
+}
+
+.bread li span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+/*
+End breadcrumb
+############*/
+
+
+/*
+Start ourService
+#############*/
+.ourService {
+  width: 1644px;
+  margin: 70px auto 0;
+}
+
+.ourServiceContent {
+  width: 100%;
+}
+
+.ourServiceItem {
+  height: 475px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.ourServiceItem__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  line-height: 106%;
+  width: 710px;
+}
+
+.ourServiceItem__desc {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 710px;
+  padding-top: 15px;
+}
+
+.ourService__img2,
+.ourService__img {
+  position: absolute;
+  top: 0;
+  right: -129px;
+}
+
+.ourService__img2 {
+  right: 0;
+  left: -129px;
+}
+
+.ourServiceItemRight {
+  align-items: flex-end;
+}
+
+/*
+End ourService
+############*/
+
+.footer2 {
+  margin-top: 0;
+  height: 560px;
+}
+
+.footer2 .footerTop {
+  padding-top: 77px;
+}
