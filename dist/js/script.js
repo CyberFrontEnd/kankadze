@@ -14,4 +14,9 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  $('.answearsItem__title').on('click', function () {
+    $(this).parents('.answearsItem').find('.answearsItemDown').slideToggle();
+  });
+
 });
