@@ -294,6 +294,8 @@ Start worldTravel
   padding-top: 140px;
 }
 
+
+.reviews__title,
 .popupBlock__title,
 .contact__title,
 .ourService__title,
@@ -828,7 +830,7 @@ Start popupBlock
   width: 530px;
 }
 
-.popupBlock__title{
+.popupBlock__title {
   color: #434337;
   font-size: 65px;
   text-align: center;
@@ -873,4 +875,75 @@ Start popupBlock
 
 /*
 End popupBlock
+############*/
+
+/*
+Start reviews
+#############*/
+.reviews {
+  width: 1644px;
+  margin: 70px auto 0;
+}
+
+.reviews__paragraf {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 885px;
+  margin-top: 25px;
+}
+
+.reviews__paragraf a {
+  color: #ffffff;
+  font: normal bold 22px 'Montserrat', sans-serif;
+}
+
+.youtube {
+  margin: 100px auto 0;
+  width: 890px;
+}
+
+.youtube iframe {
+  width: 890px;
+  height: 496px;
+}
+
+
+/*
+End reviews
+############*/
+
+
+/*
+Start swipeSlider
+#############*/
+.swipeSlider {
+  height: 890px;
+  margin-top: 80px;
+}
+
+.mySwiper {
+  width: 1644px;
+  margin: 0 auto;
+  height: 890px;
+}
+
+.swipeSliderBlock {
+  width: 1190px;
+}
+
+.swipeSliderBlock__title {
+  color: #ffffff;
+  font: normal 33 45px 'Montserrat', sans-serif;
+  line-height: 106%;
+  margin-bottom: 30px;
+}
+
+.swipeSliderBlock__paragraf {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  padding-bottom: 20px;
+}
+
+/*
+End swipeSlider
 ############*/

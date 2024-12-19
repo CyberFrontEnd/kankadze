@@ -3,13 +3,15 @@ $(document).ready(function () {
     autoFocus: false,
   });
 
-  // Start intlTelInput
-  function phoneMask() {
-    $('.phone_mask').intlTelInput({
-      utilsScript: "js/utils.js",
-      preferredCountries: ["ru", "by", "ua", "kz"]
-    });
-  }
 
-  phoneMask();
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
