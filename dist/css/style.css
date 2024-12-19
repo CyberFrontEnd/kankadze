@@ -917,18 +917,41 @@ End reviews
 Start swipeSlider
 #############*/
 .swipeSlider {
-  height: 890px;
-  margin-top: 80px;
+  height: 1065px;
+  margin-top: -70px;
+  background: url('../images/bg5.png') no-repeat top center;
 }
 
 .mySwiper {
+  width: 1190px;
+  height: 1065px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.swipeSliderWidth {
   width: 1644px;
   margin: 0 auto;
-  height: 890px;
+  height: 1065px;
+  justify-content: flex-start;
 }
 
 .swipeSliderBlock {
   width: 1190px;
+  height: 1235px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .swipeSliderBlock__title {
@@ -944,6 +967,72 @@ Start swipeSlider
   padding-bottom: 20px;
 }
 
+.swiperNaviation {
+  position: relative;
+  width: 280px;
+  margin-top: -90px;
+  height: 80px;
+}
+
+.swiperNaviation .swiper-pagination {
+  color: #ffffff;
+  font: normal 900 65px 'Coolvetica', sans-serif;
+}
+
+.swiperNaviation .swiper-button-prev,
+.swiperNaviation .swiper-button-next {
+  z-index: 999;
+  background: url('../images/icon10.svg') no-repeat top center;
+  width: 75px;
+  height: 40px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.swiperNaviation .swiper-button-next:hover {
+  background: url('../images/icon13.svg') no-repeat top center;
+}
+
+.swiperNaviation .swiper-button-prev {
+  background: url('../images/icon11.svg') no-repeat top center;
+}
+
+.swiperNaviation .swiper-button-prev:hover {
+  background: url('../images/icon14.svg') no-repeat top center;
+}
+
+.swiperNaviation .swiper-button-prev:after,
+.swiperNaviation .swiper-button-next:after {
+  display: none;
+}
+
+.swiperNaviation .swiper-button-disabled:after {
+  display: none;
+}
+
+.swiperNaviation .swiper-button-next.swiper-button-disabled {
+  background: url('../images/icon12.svg') no-repeat top center;
+}
+
+.swiperNaviation .swiper-button-disabled {
+  background: url('../images/icon9.svg') no-repeat top center;
+  opacity: 1 !important;
+}
+
 /*
 End swipeSlider
+############*/
+
+/*
+Start answears
+#############*/
+.answears {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+/*
+End answears
 ############*/
