@@ -157,6 +157,7 @@ Start wrap
   background-size: cover;
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .wrapIn {
@@ -301,7 +302,8 @@ Start worldTravel
   padding-top: 140px;
 }
 
-
+.descriptions__title,
+.tourYar__title,
 .reviews__title,
 .popupBlock__title,
 .contact__title,
@@ -1122,4 +1124,314 @@ Start answears
 
 /*
 End answears
+############*/
+
+/*
+Start tourYar
+#############*/
+.tourYar {
+  width: 1644px;
+  margin: 70px auto 0;
+}
+
+.tourYar__title {
+  width: 500px;
+}
+
+.tourYarList {
+  width: 1650px;
+  margin: 60px auto 0;
+  justify-content: space-between;
+}
+
+.tourYarList__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  margin-left: 90px;
+}
+
+.tourYarList__desc {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 330px;
+  margin-top: 14px;
+  margin-left: 95px;
+}
+
+.tourYarList li {
+  position: relative;
+  margin-bottom: 100px;
+  width: 545px;
+}
+
+.tourYarList li:after {
+  content: "";
+  display: block;
+  background: url('../images/icon15.svg') no-repeat top center;
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+}
+
+.tourYarList li:nth-child(2):after {
+  background: url('../images/icon16.svg') no-repeat top center;
+}
+
+.tourYarList li:nth-child(3):after {
+  background: url('../images/icon17.svg') no-repeat top center;
+  height: 70px;
+}
+
+.tourYarList li:nth-child(4):after {
+  background: url('../images/icon18.svg') no-repeat top center;
+  height: 45px;
+  width: 90px;
+}
+
+.tourYarList li:nth-child(5):after {
+  background: url('../images/icon19.svg') no-repeat top center;
+  height: 50px;
+  width: 50px;
+}
+
+.tourYarList li:nth-child(6):after {
+  background: url('../images/icon20.svg') no-repeat top center;
+  height: 54px;
+  width: 65px;
+}
+
+.tourYarList li.tourYarListKilomeetraj {
+  width: 380px;
+}
+
+.tourYarList li.tourYarListJilio {
+  width: 374px;
+}
+
+.tourYarList li.tourYarListStart {
+  width: 440px;
+}
+
+.tourYarList li.tourYarListType {
+  width: 440px;
+}
+
+/*
+End tourYar
+############*/
+
+/*
+Start tourYarMain
+#################*/
+.tourYarMain {
+  width: 1300px;
+  margin: 40px auto 0;
+}
+
+.tourYarMain__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tourYarMain__title:before {
+  content: "";
+  background: url('../images/icon21.svg') no-repeat top center;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-right: 30px;
+}
+
+.tourYarMain__pararaf {
+  text-align: center;
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 780px;
+  margin: 15px auto 30px;
+  padding-left: 40px;
+}
+
+.tourYarMainSlider {
+  width: 1300px;
+  margin: 0 auto;
+  height: 900px;
+}
+
+.tourYarMainSlider .mySwiper {
+  width: 1300px;
+  height: 930px;
+  margin: 0 auto;
+}
+
+.tourYarMainSlider .swiperNaviation {
+  margin: -90px auto 0;
+}
+
+.tourYarMainSlider .mySwiper img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+/*
+End tourYarMain
+###############*/
+
+/*
+Start descriptions
+#############*/
+.descriptions {
+  margin-top: 50px;
+}
+
+.descriptionsIn {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+.descriptions__title {
+  margin-bottom: 30px;
+}
+
+.descriptions__paragraf {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 1080px;
+  margin-bottom: 20px;
+}
+
+.wrap2 {
+  background: url('../images/bg7.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+/*
+End descriptions
+############*/
+
+/*
+Start infoBlock
+#############*/
+.infoBlock {
+  width: 1644px;
+  margin: 140px auto 0;
+}
+
+.infoBlockTop {
+  justify-content: space-between;
+}
+
+.infoBlockTopBlock__title,
+.infoBlockTop__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+}
+
+.infoBlockTop__title:before {
+  background: url('../images/icon22.svg') no-repeat top center;
+  content: '';
+  display: block;
+  width: 70px;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.infoBlockTopBlockInfo {
+  width: 400px;
+  margin-left: 100px;
+}
+
+
+.infoBlockTopBlockInfo__title {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  padding: 10px 0;
+}
+
+.infoBlockTopBlockInfo__desc {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.infoBlockTopBlockInfo__desc span {
+  font-weight: bold;
+}
+
+.infoBlockTopBlock2 {
+  width: 931px;
+}
+
+.infoBlockTopBlock2Info__info {
+  color: #ffffff;
+  font: normal 900 65px 'Coolvetica', sans-serif;
+}
+
+.infoBlockTopBlock2Info {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.infoBlockTopBlock2Info .headerRight__btn2 {
+  align-items: center;
+}
+
+.infoBlockTopBlock2Info .headerRight__btn2 span {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  padding-left: 20px;
+}
+
+.infoBlockTopBlock2Info .headerRight__btn {
+  background: url('../images/icon23.svg') no-repeat top center;
+  height: 50px;
+  width: 270px;
+  padding-right: 0;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 7px;
+}
+
+.infoBlockBottom {
+  align-items: center;
+  margin-top: 130px;
+  flex-direction: column;
+}
+
+.infoBlockBottom__href {
+  justify-content: center;
+  align-items: center;
+  background: url('../images/icon24.svg') no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 700px;
+  margin-bottom: 30px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.infoBlockBottom__href span {
+  color: #ffffff;
+  font: normal bold 22px 'Montserrat', sans-serif;
+}
+
+.infoBlockBottom__href:hover {
+  background: url('../images/icon25.svg') no-repeat top center;
+  width: 855px;
+  height: 80px;
+}
+
+.infoBlockBottom__href:hover span {
+  color: #434337;
+  font: normal 300 39px 'Montserrat', sans-serif;
+}
+
+/*
+End infoBlock
 ############*/
