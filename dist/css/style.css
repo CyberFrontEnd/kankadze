@@ -302,6 +302,7 @@ Start worldTravel
   padding-top: 140px;
 }
 
+.tour__title,
 .descriptions__title,
 .tourYar__title,
 .reviews__title,
@@ -1450,4 +1451,79 @@ Start infoBlock
 
 /*
 End infoBlock
+############*/
+
+/*
+Start tour
+#############*/
+.tour {
+  margin-top: 70px;
+}
+
+.tour__title {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+.tourBlockItem {
+  width: 510px;
+  height: 230px;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/icon26.svg') no-repeat top center;
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  line-height: 106%;
+  text-align: center;
+  position: relative;
+}
+
+.tourBlock {
+  margin-top: 70px;
+}
+
+.tourBlockTop {
+  width: 1644px;
+  margin: 0 auto 60px;
+  justify-content: space-between;
+}
+
+.tourBlockTop__modif {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.tourBlockTop__modif .tourBlockItem {
+  margin: 0 40px;
+}
+
+.tourBlockItem__biaric:before,
+.tourBlockItem__maroco:before,
+.tourBlockItem__yar:before,
+.tourBlockItem__itali:before,
+.tourBlockItem__espaniol:before {
+  content: url("../images/icon27.svg");
+  position: absolute;
+  top: -35px;
+  left: 50px;
+}
+
+.tourBlockItem__itali:before {
+  content: url("../images/icon28.svg");
+}
+
+.tourBlockItem__yar:before {
+  content: url("../images/icon29.svg");
+}
+
+.tourBlockItem__maroco:before {
+  content: url("../images/icon30.svg");
+}
+
+.tourBlockItem__biaric:before {
+  content: url("../images/icon31.svg");
+}
+
+/*
+End tour
 ############*/
