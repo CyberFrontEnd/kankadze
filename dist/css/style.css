@@ -1547,7 +1547,6 @@ Start tour
 
 .tourBlockItemBlockContent {
   height: 380px;
-  flex-direction: column;
   justify-content: center;
   width: 710px;
 }
