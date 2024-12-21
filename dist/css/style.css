@@ -300,6 +300,7 @@ Start worldTravel
   padding-top: 140px;
 }
 
+.instruction__title,
 .tourTitle__title,
 .tour__title,
 .descriptions__title,
@@ -1512,6 +1513,7 @@ Start tour
   line-height: 106%;
   text-align: center;
   position: relative;
+  padding: 0 35px;
 }
 
 .tourBlock {
@@ -1599,7 +1601,7 @@ Start tour
 }
 
 .tourBlockItemBlockMain {
-  width: 1644px;
+  width: 1920px;
   margin: 0 auto;
 }
 
@@ -1651,4 +1653,65 @@ Start tourTitle
 
 /*
 End tourTitle
+############*/
+
+/*
+Start instruction
+#############*/
+.instruction {
+  width: 1920px;
+  margin: 70px auto 0;
+  position: relative;
+  height: 1000px;
+}
+
+.instructionContent {
+  width: 1644px;
+  margin: 40px auto 0;
+  justify-content: flex-end;
+}
+
+.instruction__title {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+.instruction__img {
+  position: absolute;
+  top: 180px;
+  left: 0;
+}
+
+.instructionRight {
+  width: 970px;
+  margin-top: 40px;
+}
+
+.instruction__paragraf {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  width: 808px;
+}
+
+.instruction__paragraf2 {
+  margin-left: 100px;
+  position: relative;
+  left: 30px;
+}
+
+.instruction__paragraf3 {
+  margin-left: 127px;
+  position: relative;
+  left: 100px;
+}
+
+.instruction__paragraf4 {
+  margin-left: 200px;
+  position: relative;
+  left: 120px;
+}
+
+/*
+End instruction
 ############*/
