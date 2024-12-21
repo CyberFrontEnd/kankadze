@@ -1524,6 +1524,61 @@ Start tour
   content: url("../images/icon31.svg");
 }
 
+.tourBlockItem.active {
+  background: url('../images/icon32.svg') no-repeat top center;
+}
+
+.tourBlockContent {
+  width: 100%;
+}
+
+.tourBlockItemBlock {
+  width: 1920px;
+  margin: 0 auto;
+  height: 475px;
+  position: relative;
+}
+
+.tourBlockItemBlock__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tourBlockItemBlockContent {
+  height: 380px;
+  flex-direction: column;
+  justify-content: center;
+  width: 710px;
+}
+
+.tourBlockItemBlockContent__title {
+  color: #ffffff;
+  font: normal 300 45px 'Montserrat', sans-serif;
+  padding-bottom: 30px;
+}
+
+.tourBlockItemBlockContent__pararaf {
+  color: #ffffff;
+  font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.tourBlockItemBlockMain {
+  width: 1644px;
+  margin: 0 auto;
+}
+
+.tourBlockItemBlockContent__href {
+  justify-content: center;
+  align-items: center;
+  background: url('../images/icon33.svg') no-repeat top center;
+  width: 651px;
+  height: 65px;
+  margin-top: 30px;
+  color: #ffffff;
+  font: normal bold 22px 'Montserrat', sans-serif;
+}
+
 /*
 End tour
 ############*/
