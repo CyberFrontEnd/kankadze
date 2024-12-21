@@ -162,8 +162,7 @@ Start wrap
 
 .wrapIn {
   position: relative;
-  max-width: 1920px;
-  width: 100%;
+  width: 1920px;
   margin: 0 auto;
 }
 
@@ -175,13 +174,13 @@ End wrap
 Start Header
 ###########*/
 .header {
-  width: 1644px;
+  width: 1920px;
   margin: 0 auto;
   padding-top: 73px;
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  z-index: 50;
+  z-index: 9;
 }
 
 .headerIn {
@@ -203,9 +202,9 @@ Start Header
 }
 
 .header__img2 {
-  top: 47px;
-  right: 172px;
-  z-index: 10;
+  top: 49px;
+  right: 168px;
+  z-index: 1;
 }
 
 .bgHeader {
@@ -259,14 +258,13 @@ Start headerBottom
 .headerBottom {
   width: 1644px;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
 }
 
 .headerBottom__title {
   color: #ffffff;
   font: normal 900 400px 'Coolvetica', sans-serif;
   margin-top: -58px;
+  position: relative;
 }
 
 .headerBottom__desc {
@@ -302,6 +300,7 @@ Start worldTravel
   padding-top: 140px;
 }
 
+.tourTitle__title,
 .tour__title,
 .descriptions__title,
 .tourYar__title,
@@ -333,6 +332,8 @@ Start worldTravel
 .worldTravelMain {
   position: relative;
   height: 1060px;
+  width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -597,21 +598,37 @@ Start breadcrumb
 #############*/
 .breadcrumb {
   margin-top: 180px;
-  background: url('../images/icon4.svg') no-repeat left;
-  background-size: contain;
-  height: 40px;
-  padding-top: 6px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+
+.breadcrumbWidth {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .bread {
-  width: 1644px;
-  margin: 0 auto;
+  background: url(../images/icon34.png) no-repeat 0 0;
+  background-size: 100% 88%;
+  height: 39px;
+  display: inline-block;
+  padding-right: 35px;
+  padding-left: 136px;
+}
+
+.bread li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .bread li a,
 .bread li span {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
+  position: relative;
+  top: 3px;
 }
 
 .bread li a {
@@ -637,6 +654,9 @@ Start breadcrumb
   background: #ffffff;
   height: 1px;
   margin: 0 10px;
+  position: relative;
+  left: 7px;
+  top: 2px;
 }
 
 .bread li span {
@@ -867,6 +887,21 @@ Start popupBlock
   margin: 50px auto 0;
 }
 
+.popupBlockForm .mistake {
+  border: 1px solid #FF0004;
+}
+
+.mistakeBlock {
+  justify-content: flex-end;
+}
+
+.mistakeBlock > span {
+  color: #FF0004;
+  font: normal 300 12px 'Montserrat', sans-serif;
+  display: block;
+  margin: -10px 0 10px;
+}
+
 .popupBlockForm input {
   border: 1px solid #434337;
   height: 60px;
@@ -879,7 +914,7 @@ Start popupBlock
 
 .popupBlockForm__btn {
   margin-top: 33px;
-  height: 65px;
+  height: 64px;
   width: 100%;
   background: url('../images/icon7.svg') no-repeat center;
   background-size: cover;
@@ -1457,7 +1492,8 @@ End infoBlock
 Start tour
 #############*/
 .tour {
-  margin-top: 70px;
+  width: 1644px;
+  margin: 70px auto 0;
 }
 
 .tour__title {
@@ -1580,4 +1616,39 @@ Start tour
 
 /*
 End tour
+############*/
+
+/*
+Start tourTitle
+#############*/
+.tourTitle {
+  width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tourTitle__title {
+  width: 1644px;
+  margin: 0 auto;
+  font-size: 492px;
+  position: relative;
+  z-index: 1;
+  height: 770px;
+}
+
+.tourTitle__img {
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+
+.tourTitle__img2 {
+  position: absolute;
+  top: -75px;
+  left: 0;
+  z-index: 9;
+}
+
+/*
+End tourTitle
 ############*/
