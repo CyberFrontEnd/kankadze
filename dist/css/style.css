@@ -969,6 +969,12 @@ Start reviews
   height: 496px;
 }
 
+.reviews__img {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  width: 650px;
+}
 
 /*
 End reviews
@@ -1598,9 +1604,14 @@ Start tour
   text-align: left;
 }
 
+.tourBlockItemBlockList li span,
 .tourBlockItemBlockContent__pararaf {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
+}
+
+.tourBlockItemBlockList li {
+  margin-bottom: 5px;
 }
 
 .tourBlockItemBlockMain {
@@ -1717,6 +1728,15 @@ Start instruction
 
 .constructionContent .tourBlockItemBlockContent {
   width: 840px;
+  justify-content: flex-start;
+}
+
+.tourBlockItemBlockList{
+  margin-bottom: 20px;
+}
+
+.constructionContent .tourBlockItemBlock {
+  height: 720px;
 }
 
 /*
