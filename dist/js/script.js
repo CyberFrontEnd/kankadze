@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $('[data-fancybox]').fancybox({
     autoFocus: false,
   });
@@ -19,4 +20,5 @@ $(document).ready(function () {
     $(this).parents('.answearsItem').find('.answearsItemDown').slideToggle();
   });
 
+  new WOW().init();
 });
