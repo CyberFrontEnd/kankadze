@@ -461,7 +461,7 @@ Start selectedTours
 }
 
 .selectedTours__title {
-  width: 1440px;
+  width: 1644px;
   margin: 0 auto;
 }
 
@@ -945,6 +945,11 @@ Start reviews
 .reviews {
   width: 1644px;
   margin: 70px auto 0;
+}
+
+.reviewsMain {
+  position: relative;
+  z-index: 99;
 }
 
 .reviews__paragraf {
@@ -1579,7 +1584,7 @@ Start tour
 .tourBlockItemBlock {
   width: 1920px;
   margin: 0 auto;
-  min-height: 475px;
+  min-height: 710px;
   position: relative;
 }
 
@@ -1731,14 +1736,18 @@ Start instruction
   justify-content: flex-start;
 }
 
-.tourBlockItemBlockList{
+.tourBlockItemBlockList {
   margin-bottom: 20px;
 }
 
-.constructionContent .tourBlockItemBlock {
-  height: 720px;
-}
+/*.constructionContent .tourBlockItemBlock {*/
+/*  height: 720px;*/
+/*}*/
 
 /*
 End instruction
 ############*/
+
+.tourRuss .tourBlockItemBlock {
+  min-height: 490px;
+}

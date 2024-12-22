@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content=" " name="description">
+  <meta content=" " name="keywords">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/fancybox.css" rel="stylesheet">
+  <link href="css/swipe.css" rel="stylesheet">
+
+  <title></title>
+</head>
+<body>
+
+
+<div class="wrap">
+  <div class="wrapIn">
+    <!-- Start header -->
+    <header class="header">
+      <div class="headerIn flex">
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="" loading="lazy">
+        </a>
+
+        <ul class="headerMenu flex">
+          <li>
+            <a href="">О нас</a>
+          </li>
+
+          <li>
+            <a href="#">Туры</a>
+          </li>
+
+          <li>
+            <a href="#">Инструкторы</a>
+          </li>
+
+          <li>
+            <a href="#">Ответы</a>
+          </li>
+
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="headerRight flex">
+          <a href="tel:+7 (915) 121-21-27" class="headerRight__phone">+7 (915) 121-21-27</a>
+
+          <a href="#" class="headerRight__btn flex" data-fancybox="" data-src="#hidden-content">Заказать звонок</a>
+
+          <div class="popupBlock" style="display: none;" id="hidden-content">
+            <h2 class="popupBlock__title">Заказать звонок</h2>
+
+            <form action="" class="popupBlockForm">
+              <input placeholder="Ваше имя" type="text">
+              <input placeholder="Ваш телефон" type="text">
+              <input placeholder="Код с картинки" type="text" class="mistake">
+              <div class="flex mistakeBlock">
+                <span>Это поле необходимо заполнить</span>
+              </div>
+              <img src="images/capcha.png" alt="" class="popupBlockForm__img" loading="lazy">
+
+              <a href="#" class="popupBlockForm__btn flex">Отправить</a>
+            </form>
+          </div>
+
+          <a href="" class="headerRight__btn2">
+            <img src="images/icon2.svg" alt="" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+  </div>
+
+
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/migrate.js"></script>
+<script src="js/fancybox.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
