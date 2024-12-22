@@ -1751,3 +1751,11 @@ End instruction
 .tourRuss .tourBlockItemBlock {
   min-height: 490px;
 }
+
+.popupBlock__paragraf {
+  text-align: center;
+  color: #434337;
+  font: normal 300 22px 'Montserrat', sans-serif;
+  width: 260px;
+  margin: 20px auto 0;
+}
