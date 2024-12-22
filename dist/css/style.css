@@ -1573,7 +1573,7 @@ Start tour
 .tourBlockItemBlock {
   width: 1920px;
   margin: 0 auto;
-  height: 475px;
+  min-height: 475px;
   position: relative;
 }
 
@@ -1584,15 +1584,18 @@ Start tour
 }
 
 .tourBlockItemBlockContent {
-  height: 380px;
+  min-height: 380px;
   justify-content: center;
   width: 710px;
+  margin-bottom: 40px;
 }
 
 .tourBlockItemBlockContent__title {
   color: #ffffff;
   font: normal 300 45px 'Montserrat', sans-serif;
   padding-bottom: 30px;
+  width: 100%;
+  text-align: left;
 }
 
 .tourBlockItemBlockContent__pararaf {
@@ -1710,6 +1713,10 @@ Start instruction
   margin-left: 200px;
   position: relative;
   left: 120px;
+}
+
+.constructionContent .tourBlockItemBlockContent {
+  width: 840px;
 }
 
 /*
