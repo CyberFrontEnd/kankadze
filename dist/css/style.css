@@ -1686,7 +1686,7 @@ Start infoBlock
 .infoBlockTopBlock2Info .headerRight__btn2 span {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .infoBlockTopBlock2Info .headerRight__btn {
@@ -1773,7 +1773,7 @@ Start tour
   background-size: contain;
 }
 
-a.tourBlockItem:hover span  {
+a.tourBlockItem:hover span {
   background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1817,30 +1817,30 @@ a.tourBlockItem:hover span  {
   margin: 0 40px;
 }
 
-.tourBlockItem__biaric:before,
-.tourBlockItem__maroco:before,
-.tourBlockItem__yar:before,
-.tourBlockItem__itali:before,
-.tourBlockItem__espaniol:before {
+.tourBlockItem__biaric:after,
+.tourBlockItem__maroco:after,
+.tourBlockItem__yar:after,
+.tourBlockItem__itali:after,
+.tourBlockItem__espaniol:after {
   content: url("../images/icon27.svg");
   position: absolute;
   top: -35px;
   left: 50px;
 }
 
-.tourBlockItem__itali:before {
+.tourBlockItem__itali:after {
   content: url("../images/icon28.svg");
 }
 
-.tourBlockItem__yar:before {
+.tourBlockItem__yar:after {
   content: url("../images/icon29.svg");
 }
 
-.tourBlockItem__maroco:before {
+.tourBlockItem__maroco:after {
   content: url("../images/icon30.svg");
 }
 
-.tourBlockItem__biaric:before {
+.tourBlockItem__biaric:after {
   content: url("../images/icon31.svg");
 }
 
@@ -1896,6 +1896,7 @@ a.tourBlockItem:hover span  {
 }
 
 .tourBlockItemBlockContent__href {
+  position: relative;
   justify-content: center;
   align-items: center;
   background: url('../images/icon33.svg') no-repeat top center;
@@ -1906,9 +1907,21 @@ a.tourBlockItem:hover span  {
   font: normal bold 22px 'Montserrat', sans-serif;
 }
 
+.tourBlockItemBlockContent__href:hover {
+  background: url('../images/icon49.svg') no-repeat top center;
+  background-size: contain;
+}
+
+.tourBlockItemBlockContent__href:hover span {
+  background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 /*
 End tour
-############*/
+########*/
 
 /*
 Start tourTitle
@@ -2092,5 +2105,24 @@ End instruction
 }
 
 .contact__btn:hover:before {
+  opacity: 1;
+}
+
+.tourBlockItemBlockContent__href:after {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tourBlockItemBlockContent__href:hover:after {
   opacity: 1;
 }
