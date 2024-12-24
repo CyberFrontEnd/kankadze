@@ -221,6 +221,39 @@ Start Header
 .headerMenu li a {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+  position: relative;
+}
+
+.headerMenu li a:hover {
+  font-weight: 600;
+  font-size: 25px;
+  background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headerMenu li a:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.headerMenu li a:hover:before {
+  opacity: 1;
 }
 
 .headerRight {
@@ -229,11 +262,56 @@ Start Header
   position: relative;
   align-items: center;
   top: 5px;
+  height: 45px;
 }
 
 .headerRight__phone {
   color: #ffffff;
   font: normal bold 22px 'Montserrat', sans-serif;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+  position: relative;
+}
+
+.headerRight__phone:after {
+  content: '';
+  border-bottom: 1px solid #434337;
+  width: 160px;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.headerRight__phone:hover {
+  color: #434337;
+}
+
+.headerRight__phone:hover:after {
+  opacity: 1;
+}
+
+.headerRight__phone:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.headerRight__phone:hover:before {
+  opacity: 1;
 }
 
 .headerRight__btn {
@@ -246,6 +324,67 @@ Start Header
   font: normal bold 22px 'Montserrat', sans-serif;
   color: #ffffff;
   padding-right: 15px;
+  position: relative;
+}
+
+.headerRight__btn:hover + .headerRight__btn2 {
+  display: none;
+}
+
+.headerRight__btn:hover {
+  width: 323px;
+  height: 45px;
+  background: url('../images/icon37.svg') no-repeat top center;
+  text-align: center;
+  justify-content: center;
+  padding-right: 0;
+}
+
+.headerRight__btn:before {
+  content: '';
+  position: absolute;
+  background: url('../images/icon36.svg') no-repeat top center;
+  width: 41px;
+  height: 41px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.headerRight__btn:hover:before {
+  opacity: 1;
+}
+
+.headerRight__btn2 {
+  background: url('../images/icon2.svg') no-repeat top center;
+  width: 41px;
+  height: 41px;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.headerRight__btn2:hover {
+  background: url('../images/icon35.svg') no-repeat top center;
+}
+
+.headerRight__btn2:before {
+  content: '';
+  position: absolute;
+  background: url('../images/icon36.svg') no-repeat top center;
+  width: 41px;
+  height: 41px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.headerRight__btn2:hover:before {
+  opacity: 1;
 }
 
 /*
@@ -513,6 +652,49 @@ Start footer
 .footerBottom li a {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+  position: relative;
+}
+
+.footerBottom li a:hover {
+  font-weight: bold;
+}
+
+.footerBottom li a:after {
+  content: '';
+  border-bottom: 1px solid #ffffff;
+  width: 90%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.footerBottom li a:hover:after {
+  opacity: 1;
+}
+
+.footerBottom li a:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.footerBottom li a:hover:before {
+  opacity: 1;
 }
 
 .footerTop {
@@ -812,6 +994,36 @@ Start contact
   margin-top: 50px;
   color: #ffffff;
   font: normal bold 22px 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.contactInfo__btn:hover {
+  background: url('../images/icon46.svg') no-repeat top center;
+  background-size: contain;
+}
+
+.contactInfo__btn:hover span {
+  background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactInfo__btn:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.contactInfo__btn:hover:before {
+  opacity: 1;
 }
 
 .contactRight input {
@@ -863,6 +1075,33 @@ Start contact
   margin-top: 20px;
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.contact__btn:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.contact__btn:hover {
+  background: url(../images/icon47.svg) no-repeat top center;
+  background-size: contain;
+}
+
+.contact__btn:hover span {
+  background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /*
@@ -1514,7 +1753,7 @@ Start tour
 }
 
 .tourBlockItem {
-  width: 510px;
+  width: 521px;
   height: 230px;
   justify-content: center;
   align-items: center;
@@ -1525,6 +1764,38 @@ Start tour
   text-align: center;
   position: relative;
   padding: 0 35px;
+}
+
+.tourBlockItem:hover {
+  width: 521px;
+  height: 230px;
+  background: url('../images/icon48.svg') no-repeat top center;
+  background-size: contain;
+}
+
+a.tourBlockItem:hover span  {
+  background: linear-gradient(91.33deg, #877146 10.32%, #CDB78C 38.63%, #8D774C 64.29%, #E2CCA1 98.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tourBlockItem:before {
+  content: '';
+  display: block;
+  background: url(../images/icon36.svg) no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tourBlockItem:hover:before {
+  opacity: 1;
 }
 
 .tourBlock {
@@ -1754,4 +2025,72 @@ End instruction
   font: normal 300 22px 'Montserrat', sans-serif;
   width: 260px;
   margin: 20px auto 0;
+}
+
+.footerTopRightSocial__vk,
+.footerTopRightSocial__youtube,
+.footerTopRightSocial__vober,
+.footerTopRightSocial__telegram {
+  background: url('../images/icon38.svg') no-repeat top center;
+  width: 91px;
+  height: 91px;
+  display: block;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.footerTopRightSocial__vober {
+  background: url('../images/icon40.svg') no-repeat top center;
+}
+
+.footerTopRightSocial__vober:hover {
+  background: url('../images/icon41.svg') no-repeat top center;
+}
+
+.footerTopRightSocial__youtube {
+  background: url('../images/icon42.svg') no-repeat top center;
+}
+
+.footerTopRightSocial__youtube:hover {
+  background: url('../images/icon43.svg') no-repeat top center;
+}
+
+.footerTopRightSocial__vk {
+  background: url('../images/icon44.svg') no-repeat top center;
+}
+
+.footerTopRightSocial__vk:hover {
+  background: url('../images/icon45.svg') no-repeat top center;
+}
+
+.footerTopRightSocial li a {
+  position: relative;
+}
+
+.footerTopRightSocial li a:before {
+  content: '';
+  display: block;
+  background: url('../images/icon36.svg') no-repeat top center;
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.footerTopRightSocial li a:hover:before {
+  opacity: 1;
+}
+
+.footerTopRightSocial__telegram:hover {
+  background: url('../images/icon39.svg') no-repeat top center;
+}
+
+.contact__btn:hover:before {
+  opacity: 1;
 }
