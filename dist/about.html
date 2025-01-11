@@ -22,6 +22,50 @@
         <!-- Start header -->
         <header class="header bgHeader">
             <div class="headerIn flex">
+                <a href="#" class="btnMobil" data-fancybox="" data-src="#menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div class="popupBlockMenu" style="display: none;" id="menu">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="" loading="lazy">
+                    </a>
+
+                    <ul class="popupBlockMenuNav">
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Туры</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Инструкторы</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Ответы</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="popupBlockMenuInfo flex">
+                        <a href="tel:+7 (915) 121-21-27" class="popupBlockMenuInfo__phone">+7 (915) 121-21-27</a>
+
+                        <a href="#" class="headerRight__btn flex" data-fancybox="" data-src="#hidden-content">Заказать звонок</a>
+                    </div>
+                </div>
+
                 <a href="#" class="logo">
                     <img src="images/logo.svg" alt="" loading="lazy">
                 </a>
@@ -75,6 +119,16 @@
                         </form>
                     </div>
                 </div>
+
+                <div class="socialInfo flex">
+                    <a href="#" class="socialInfo__phone">
+                        <span>Phone</span>
+                    </a>
+
+                    <a href="#" class="socialInfo__whatsapp">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
             </div>
         </header>
         <!-- End header -->
@@ -97,8 +151,10 @@
 
             <div class="ourServiceContent">
                 <div class="ourServiceItem flex wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                    <div class="ourServiceItem__title">Организация мототуров</div>
-                    <div class="ourServiceItem__desc">Для опытных мотоциклистов или окончивших базовый курс мы проводим мототуры в России и за рубежом.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Организация мототуров</div>
+                        <div class="ourServiceItem__desc">Для опытных мотоциклистов или окончивших базовый курс мы проводим мототуры в России и за рубежом.</div>
+                    </div>
 
                     <img src="images/img5.png" alt="" class="ourService__img" loading="lazy">
                 </div>
@@ -107,14 +163,21 @@
                     <img src="images/img6.png" alt="" class="ourService__img2" loading="lazy">
 
 
-                    <div class="ourServiceItem__title">Выезды на трек</div>
-                    <div class="ourServiceItem__desc">Для опытных мотоциклистов или окончивших базовый курс и курс подготовки к треку. Трек-дни в России и за рубежом.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Выезды на трек</div>
+                        <div class="ourServiceItem__desc">Для опытных мотоциклистов или окончивших базовый курс и курс подготовки к треку. Трек-дни в России и за рубежом.</div>
+                    </div>
                 </div>
 
                 <div class="ourServiceItem flex wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                    <div class="ourServiceItem__title">Мото-интенсивы</div>
-                    <div class="ourServiceItem__desc">Самый взрывной и полезный материал, разработанный лучшими специалистами, за короткий промежуток времени серьезно прокачивает навыки студентов. Мы проводим мотомарафоны для всех желающих подтянуть свои знания
-                        и умения. Подходит начинающим, опытным и спортсменам. Полностью индивидуальный подход позволяет максимально эффективно использовать время, проведённое под контролем профессионального инструктора.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Мото-интенсивы</div>
+                        <div class="ourServiceItem__desc">Самый взрывной и полезный материал, разработанный лучшими специалистами, за короткий промежуток времени серьезно
+                            прокачивает навыки студентов. Мы проводим мотомарафоны для всех желающих подтянуть свои знания
+                            и умения. Подходит начинающим, опытным и спортсменам. Полностью индивидуальный подход позволяет максимально эффективно использовать время, проведённое
+                            под контролем профессионального инструктора.
+                        </div>
+                    </div>
 
                     <img src="images/img7.png" alt="" class="ourService__img" loading="lazy">
                 </div>
@@ -122,15 +185,25 @@
                 <div class="ourServiceItem flex ourServiceItemRight wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
                     <img src="images/img8.png" alt="" class="ourService__img2" loading="lazy">
 
-                    <div class="ourServiceItem__title">VIP-обслуживание</div>
-                    <div class="ourServiceItem__desc">Мы практикуем особый подход для каждого нашего ученика. Мы разрабатываем специальную персональную стратегию обучения, которая поможет вам быстрее и лучше освоить мотоцикл. Личный инструктор подкрепит ваши знания
-                        и навыки профессиональным подходом. Обучение возможно как на школьной технике, так и на мотоцикле ученика. Наша мотошкола заботится о ваших знаниях, навыках и комфорте. Ваши умения – залог вашей безопасности в будущем.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">VIP-обслуживание</div>
+                        <div class="ourServiceItem__desc">Мы практикуем особый подход для каждого нашего ученика. Мы разрабатываем специальную персональную стратегию обучения, которая
+                            поможет вам быстрее и лучше освоить мотоцикл. Личный инструктор подкрепит ваши знания
+                            и навыки профессиональным подходом. Обучение возможно как на школьной технике, так и на мотоцикле ученика. Наша мотошкола заботится о ваших знаниях, навыках
+                            и комфорте. Ваши умения – залог вашей безопасности в будущем.
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ourServiceItem flex wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                    <div class="ourServiceItem__title">Помощь в приобретении мотоцикла и экипировки</div>
-                    <div class="ourServiceItem__desc">Если вы пришли в мотошколу, значит вскоре вам понадобится личный мотоцикл. Выбор своего мотоцикла — ответственное но интересное занятие. Особенно если это случается впервые. Нужно знать много тонкостей и обладать определённым опытом. Именно в этом мы сможем вам помочь. Мы полностью возьмем на себя все этапы отбора вашего будущего байка. Основываясь на ваших пожелания
-                        и опыте, мы поможем найти то, что нужно именно вам.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Помощь в приобретении мотоцикла и экипировки</div>
+                        <div class="ourServiceItem__desc">Если вы пришли в мотошколу, значит вскоре вам понадобится личный мотоцикл. Выбор своего мотоцикла — ответственное но
+                            интересное занятие. Особенно если это случается впервые. Нужно знать много тонкостей и обладать определённым опытом. Именно в этом мы сможем вам помочь. Мы
+                            полностью возьмем на себя все этапы отбора вашего будущего байка. Основываясь на ваших пожелания
+                            и опыте, мы поможем найти то, что нужно именно вам.
+                        </div>
+                    </div>
 
                     <img src="images/img9.png" alt="" class="ourService__img" loading="lazy">
                 </div>
@@ -138,13 +211,20 @@
                 <div class="ourServiceItem flex ourServiceItemRight wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
                     <img src="images/img10.png" alt="" class="ourService__img2" loading="lazy">
 
-                    <div class="ourServiceItem__title">Организация мероприятий</div>
-                    <div class="ourServiceItem__desc">Наша мотошкола проводит мероприятия любых масштабов. В нашем распоряжении команда профессиональных мотогонщиков и стантрайдеров с шоу-программой, большой мотопарк новейших мотоциклов BMW и известные партнеры из мира мотоспорта. Мы превратим ваше мероприятие в праздник, который запомнится надолго.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Организация мероприятий</div>
+                        <div class="ourServiceItem__desc">Наша мотошкола проводит мероприятия любых масштабов. В нашем распоряжении команда профессиональных мотогонщиков и
+                            стантрайдеров с шоу-программой, большой мотопарк новейших мотоциклов BMW и известные партнеры из мира мотоспорта. Мы превратим ваше мероприятие в праздник,
+                            который запомнится надолго.
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ourServiceItem flex wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
-                    <div class="ourServiceItem__title">Корпоративные программы и ивенты</div>
-                    <div class="ourServiceItem__desc">Индивидуальная разработка корпоративной учебно-развлекательной программы. Мотоциклы BMW S1000RR, BMW F900R, BMW G310R</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Корпоративные программы и ивенты</div>
+                        <div class="ourServiceItem__desc">Индивидуальная разработка корпоративной учебно-развлекательной программы. Мотоциклы BMW S1000RR, BMW F900R, BMW G310R</div>
+                    </div>
 
                     <img src="images/img11.png" alt="" class="ourService__img" loading="lazy">
                 </div>
@@ -152,11 +232,14 @@
                 <div class="ourServiceItem flex ourServiceItemRight wow fadeInUp" data-wow-offset="200" data-wow-duration="1.5s">
                     <img src="images/img12.png" alt="" class="ourService__img2" loading="lazy">
 
-                    <div class="ourServiceItem__title">Обслуживание / Тюнинг / Заказ запчастей</div>
-                    <div class="ourServiceItem__desc">При школе работает станция техобслуживания
-                        с современным оборудованием и квалифицированными механиками, налажены поставки запчастей
-                        и дополнительного оборудования. Мы готовы помочь
-                        с обслуживанием, ремонтом и тюнингом вашего мотоцикла, подготовить его к соревнованиям, путешествиям и другим видам мотоциклетной активности.</div>
+                    <div class="ourServiceBlock">
+                        <div class="ourServiceItem__title">Обслуживание / Тюнинг / Заказ запчастей</div>
+                        <div class="ourServiceItem__desc">При школе работает станция техобслуживания
+                            с современным оборудованием и квалифицированными механиками, налажены поставки запчастей
+                            и дополнительного оборудования. Мы готовы помочь
+                            с обслуживанием, ремонтом и тюнингом вашего мотоцикла, подготовить его к соревнованиям, путешествиям и другим видам мотоциклетной активности.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
