@@ -1206,8 +1206,9 @@ End popupBlock
 Start reviews
 #############*/
 .reviews {
-  width: 1644px;
+  max-width: 1644px;
   margin: 70px auto 0;
+  height: 400px;
 }
 
 .reviewsMain {
@@ -1218,7 +1219,8 @@ Start reviews
 .reviews__paragraf {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
-  width: 885px;
+  max-width: 885px;
+  width: 100%;
   margin-top: 25px;
 }
 
@@ -1229,11 +1231,13 @@ Start reviews
 
 .youtube {
   margin: 100px auto 0;
-  width: 890px;
+  max-width: 890px;
+  width: 100%;
 }
 
 .youtube iframe {
-  width: 890px;
+  max-width: 890px;
+  width: 100%;
   height: 496px;
 }
 
@@ -1241,7 +1245,8 @@ Start reviews
   position: absolute;
   top: 250px;
   right: 0;
-  width: 650px;
+  max-width: 650px;
+  width: 100%;
 }
 
 /*
@@ -1365,7 +1370,8 @@ End swipeSlider
 Start answears
 #############*/
 .answears {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 45px auto 0;
 }
 
@@ -1394,7 +1400,8 @@ Start answears
 .answearsItemDown__paragraf {
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
-  width: 990px;
+  max-width: 990px;
+  width: 100%;
 }
 
 .answearsItem:nth-child(2) {
@@ -1406,7 +1413,8 @@ Start answears
 }
 
 .answearsItem:nth-child(3) .answearsItem__text {
-  width: 750px;
+  max-width: 750px;
+  width: 100%;
 }
 
 .answearsItem:nth-child(4) {
@@ -1414,7 +1422,8 @@ Start answears
 }
 
 .answearsItem:nth-child(4) .answearsItemDown .answearsItemDown__paragraf {
-  width: 545px;
+  max-width: 545px;
+  width: 100%;
 }
 
 .answearsItem:nth-child(5) {
@@ -1438,7 +1447,8 @@ Start answears
 }
 
 .answearsItem:nth-child(9) .answearsItem__text {
-  width: 885px;
+  max-width: 885px;
+  width: 100%;
 }
 
 .answearsItem:nth-child(10) {
@@ -2285,6 +2295,11 @@ Start responsive
 }
 
 @media (max-width: 1700px) {
+  .answears,
+  .reviews {
+    max-width: 95%;
+  }
+
   .contact {
     max-width: 95%;
     justify-content: space-between;
@@ -2297,7 +2312,7 @@ Start responsive
   .contactLeft {
     max-width: 46%;
   }
-  
+
   .ourService {
     max-width: 95%;
   }
@@ -2349,6 +2364,23 @@ Start responsive
 }
 
 @media (max-width: 1620px) {
+  .answearsItem__title {
+    font-size: 35px;
+  }
+
+  .answearsItem:nth-child(3) .answearsItem__text {
+    max-width: 86%;
+  }
+
+  .answearsItem:nth-child(9) .answearsItem__text {
+    max-width: 86%;
+  }
+
+  .contactInfo__btn,
+  .contact__btn {
+    background-size: contain;
+  }
+
   .worldTravel__img {
     top: 130px;
   }
@@ -2369,6 +2401,31 @@ Start responsive
 }
 
 @media (max-width: 1560px) {
+  .answearsItem:nth-child(4) {
+    margin-left: 900px;
+  }
+
+  .answearsItem:nth-child(10) {
+    margin-left: 886px;
+  }
+
+  .answearsItem:nth-child(11) {
+    margin-left: 550px;
+  }
+
+  .answearsItem:nth-child(9) {
+    margin-left: 550px;
+  }
+
+  .answearsItem:nth-child(4) {
+    margin-left: 789px;
+  }
+
+  .answearsItem:nth-child(10) {
+    margin-left: 760px;
+  }
+
+
   .contactSectionList {
     max-width: 95%;
   }
@@ -2403,7 +2460,7 @@ Start responsive
   .headerRight__btn {
     max-width: 47%;
     width: 100%;
-    font-size: 18px;
+    font-size: 20px;
     background-size: 100% 100%;
     padding-right: 10px;
   }
@@ -2414,6 +2471,14 @@ Start responsive
 }
 
 @media (max-width: 1480px) {
+  .reviews__paragraf {
+    max-width: 700px;
+  }
+
+  .bread {
+    padding-left: 38px;
+  }
+
   .ourServiceItem__title {
     font-size: 40px;
   }
@@ -2451,6 +2516,9 @@ Start responsive
 }
 
 @media (max-width: 1340px) {
+  .reviews__paragraf {
+    max-width: 50%;
+  }
 
   .headerRight__btn {
     padding-right: 10px;
@@ -2462,6 +2530,47 @@ Start responsive
 
   .headerBottom__desc {
     font-size: 100px;
+  }
+
+  .answearsItem:nth-child(2) {
+    margin-left: 130px;
+  }
+
+  .answearsItem:nth-child(3) {
+    margin-left: 325px;
+  }
+
+  .answearsItem:nth-child(4) {
+    margin-left: 640px;
+  }
+
+  .answearsItem:nth-child(5) {
+    margin-left: 405px;
+  }
+
+  .answearsItem:nth-child(6) {
+    margin-left: 130px;
+  }
+
+  .answearsItem:nth-child(8) {
+    margin-left: 125px;
+  }
+
+  .answearsItem:nth-child(9) {
+    margin-left: 310px;
+  }
+
+  .answearsItem:nth-child(10) {
+    margin-left: 615px;
+  }
+
+  .answearsItem:nth-child(11) {
+    margin-left: 313px;
+  }
+
+  .answearsItem:nth-child(8) .answearsItem__text {
+    max-width: 81%;
+    width: 100%;
   }
 }
 
@@ -2486,6 +2595,11 @@ Start responsive
 }
 
 @media (max-width: 1200px) {
+  .reviews__img {
+    max-width: 40%;
+    top: 290px;
+  }
+
   .ourServiceBlock {
     max-width: 50%;
   }
@@ -2560,6 +2674,16 @@ Start responsive
     text-align: right;
     padding-right: 10px;
   }
+
+  .answearsItem:nth-child(4) .answearsItem__text {
+    max-width: 60%;
+    width: 100%;
+  }
+
+  .answearsItem:nth-child(10) .answearsItem__text {
+    max-width: 60%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -2632,6 +2756,15 @@ Start responsive
 }
 
 @media (max-width: 1000px) {
+  .bgHeader:before {
+    height: 240px;
+  }
+
+  .reviews__img {
+    max-width: 37%;
+    top: 365px;
+  }
+
   .footerBottom li a {
     font-size: 18px;
   }
@@ -2696,12 +2829,57 @@ Start responsive
   .headerBottom__desc {
     margin-top: -34px;
   }
-}
 
-@media (max-width: 945px) {
-  .header__img2 {
-    right: -310px;
-    top: 30px;
+  .reviews {
+    height: 270px;
+  }
+
+  .answearsItem__title {
+    font-size: 30px;
+  }
+
+  .answearsItem__title span {
+    font-size: 80px;
+  }
+
+  .answearsItem:nth-child(2) {
+    margin-left: 85px;
+  }
+
+  .answearsItem {
+    margin-bottom: 25px;
+  }
+
+  .answearsItem:nth-child(3) {
+    margin-left: 185px;
+  }
+
+  .answearsItem:nth-child(4) {
+    margin-left: 480px;
+  }
+
+  .answearsItem:nth-child(4) .answearsItem__text {
+    max-width: 75%;
+  }
+
+  .answearsItem:nth-child(5) {
+    margin-left: 275px;
+  }
+
+  .answearsItem:nth-child(6) {
+    margin-left: 85px;
+  }
+
+  .answearsItem:nth-child(9) {
+    margin-left: 230px;
+  }
+
+  .answearsItem:nth-child(10) {
+    margin-left: 418px;
+  }
+
+  .answearsItem:nth-child(10) .answearsItem__text {
+    max-width: 75%;
   }
 }
 
@@ -2784,6 +2962,16 @@ Start responsive
   .footerTopRightSocial li {
     margin-bottom: 20px;
   }
+
+  .reviews__title {
+    max-width: 60%;
+    width: 100%;
+    font-size: 70px;
+  }
+
+  .reviews__paragraf {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -2809,12 +2997,18 @@ Start responsive
   .breadcrumb {
     margin-top: 140px;
   }
+
+  .answearsItem:nth-child(7) .answearsItem__title {
+    max-width: 90%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 815px) {
   .contactInfo__btn {
     font-size: 20px;
   }
+
   .whyBgMobil__img {
     top: 500px;
     width: 65%;
@@ -2839,6 +3033,10 @@ Start responsive
 }
 
 @media (max-width: 780px) {
+  .reviews__title {
+    max-width: 65%;
+  }
+
   .ourServiceBlock {
     max-width: 56%;
   }
@@ -2876,6 +3074,14 @@ Start responsive
 }
 
 @media (max-width: 730px) {
+  .reviews__title {
+    max-width: 70%;
+  }
+
+  .reviews__paragraf {
+    max-width: 63%;
+  }
+
   .whyList li span {
     font-size: 20px;
   }
@@ -2936,6 +3142,14 @@ Start responsive
 
   .wrapIn {
     padding-bottom: 250px;
+  }
+
+  .answearsItem__title {
+    font-size: 22px;
+  }
+
+  .answearsItem__title span {
+    font-size: 60px;
   }
 }
 
@@ -3003,6 +3217,28 @@ Start responsive
   .footerTopList__address span {
     font-size: 20px;
   }
+
+  .reviews__img {
+    max-width: 60%;
+    top: 490px;
+  }
+
+  .reviews__paragraf {
+    margin-top: 420px;
+    max-width: 90%;
+  }
+
+  .answears {
+    margin: 350px auto 0;
+  }
+
+  .answearsItem:nth-child(4) {
+    margin-left: 350px;
+  }
+
+  .answearsItem:nth-child(4) .answearsItem__text {
+    max-width: 85%;
+  }
 }
 
 @media (max-width: 655px) {
@@ -3020,6 +3256,11 @@ Start responsive
 }
 
 @media (max-width: 640px) {
+  .reviews__img {
+    max-width: 67%;
+    top: 390px;
+  }
+
   .ourServiceItem__desc {
     font-size: 15px;
   }
@@ -3144,6 +3385,28 @@ Start responsive
 }
 
 @media (max-width: 550px) {
+  .contactInfo__title,
+  .contactSection__title {
+    font-size: 20px;
+  }
+
+  .contact {
+    margin: 30px auto 0;
+  }
+
+  .contactSection__desc {
+    font-size: 15px;
+  }
+
+  .contactInfo__btn {
+    font-size: 15px;
+  }
+
+  .contactInfo {
+    max-width: 95%;
+    width: 100%;
+  }
+
   .ourService__img2, .ourService__img {
     max-width: 100%;
     width: 100%;
@@ -3250,6 +3513,23 @@ Start responsive
     font-size: 25px;
     max-width: 260px;
   }
+
+  .reviews__title {
+    max-width: 250px;
+  }
+
+  .reviews__img {
+    max-width: 83%;
+    top: 360px;
+  }
+
+  .reviews__paragraf {
+    margin-top: 360px;
+  }
+
+  .reviews {
+    margin: 40px auto 0;
+  }
 }
 
 @media (max-width: 540px) {
@@ -3284,7 +3564,15 @@ Start responsive
   }
 
   .footerBottom {
-    top: 206px;
+    top: 286px;
+  }
+
+  .contact__btn {
+    font-size: 15px;
+  }
+
+  .contactSectionList li span {
+    font-size: 15px;
   }
 
   .footer {
@@ -3297,6 +3585,44 @@ Start responsive
 
   .footerTopRight__title {
     max-width: 185px;
+  }
+
+  .contactRight input {
+    font-size: 15px;
+    height: 35px;
+    padding-left: 15px;
+  }
+
+  .contactRight__textarea::-moz-placeholder,
+  .contactRight input[type="text"]::-moz-placeholder {
+    color: #ffffff;
+    font: normal 300 15px 'Montserrat', sans-serif;
+  }
+
+  .contactRight__textarea::-webkit-input-placeholder,
+  .contactRight input[type="text"]::-webkit-input-placeholder {
+    color: #ffffff;
+    font: normal 300 15px 'Montserrat', sans-serif;
+  }
+
+  .contactRight__textarea:-ms-input-placeholder,
+  .contactRight input[type="text"]:-ms-input-placeholder {
+    color: #ffffff;
+    font: normal 300 15px 'Montserrat', sans-serif;
+  }
+
+  .contactRight__textarea {
+    height: 280px;
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .contactInfo__btn {
+    margin-top: 0;
+  }
+
+  .wrapIn {
+    padding-bottom: 170px;
   }
 }
 
@@ -3315,6 +3641,16 @@ Start responsive
 }
 
 @media (max-width: 490px) {
+  .reviews__img {
+    top: 295px;
+  }
+
+  .reviews__paragraf {
+    max-width: 100%;
+    font-size: 13px;
+    margin-top: 300px;
+  }
+
   .breadcrumb {
     margin-top: 30px;
   }
@@ -3440,6 +3776,23 @@ Start responsive
 @media (max-width: 370px) {
   .headerBottom__desc {
     margin-top: 210px;
+  }
+
+  .reviews__img {
+    max-width: 94%;
+    top: 299px;
+  }
+
+  .bread li {
+    margin-right: 0;
+  }
+
+  .bread li a:after {
+    left: 0;
+  }
+
+  .reviews__title {
+    max-width: 155px;
   }
 }
 
