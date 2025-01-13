@@ -1797,17 +1797,20 @@ End infoBlock
 Start tour
 #############*/
 .tour {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 70px auto 0;
 }
 
 .tour__title {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .tourBlockItem {
-  width: 521px;
+  max-width: 521px;
+  width: 100%;
   height: 230px;
   justify-content: center;
   align-items: center;
@@ -1821,7 +1824,8 @@ Start tour
 }
 
 .tourBlockItem:hover {
-  width: 521px;
+  max-width: 521px;
+  width: 100%;
   height: 230px;
   background: url('../images/icon48.svg') no-repeat top center;
   background-size: contain;
@@ -1857,7 +1861,8 @@ a.tourBlockItem:hover span {
 }
 
 .tourBlockTop {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 0 auto 60px;
   justify-content: space-between;
 }
@@ -1900,6 +1905,7 @@ a.tourBlockItem:hover span {
 
 .tourBlockItem.active {
   background: url('../images/icon32.svg') no-repeat top center;
+  background-size: 100% 100%;
 }
 
 .tourBlockContent {
@@ -1907,7 +1913,8 @@ a.tourBlockItem:hover span {
 }
 
 .tourBlockItemBlock {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   min-height: 710px;
   position: relative;
@@ -1915,14 +1922,15 @@ a.tourBlockItem:hover span {
 
 .tourBlockItemBlock__img {
   position: absolute;
-  right: 0;
+  right: -110px;
   top: 0;
 }
 
 .tourBlockItemBlockContent {
   min-height: 380px;
   justify-content: center;
-  width: 710px;
+  max-width: 710px;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -1945,7 +1953,8 @@ a.tourBlockItem:hover span {
 }
 
 .tourBlockItemBlockMain {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1954,7 +1963,8 @@ a.tourBlockItem:hover span {
   justify-content: center;
   align-items: center;
   background: url('../images/icon33.svg') no-repeat top center;
-  width: 651px;
+  max-width: 651px;
+  width: 100%;
   height: 65px;
   margin-top: 30px;
   color: #ffffff;
@@ -1981,13 +1991,15 @@ End tour
 Start tourTitle
 #############*/
 .tourTitle {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .tourTitle__title {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 0 auto;
   font-size: 492px;
   position: relative;
@@ -2016,20 +2028,23 @@ End tourTitle
 Start instruction
 #############*/
 .instruction {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   margin: 70px auto 0;
   position: relative;
   height: 1000px;
 }
 
 .instructionContent {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 40px auto 0;
   justify-content: flex-end;
 }
 
 .instruction__title {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -2040,7 +2055,8 @@ Start instruction
 }
 
 .instructionRight {
-  width: 970px;
+  max-width: 970px;
+  width: 100%;
   margin-top: 40px;
 }
 
@@ -2048,7 +2064,8 @@ Start instruction
   color: #ffffff;
   font: normal 300 22px 'Montserrat', sans-serif;
   margin-bottom: 30px;
-  width: 808px;
+  max-width: 808px;
+  width: 100%;
 }
 
 .instruction__paragraf2 {
@@ -2066,11 +2083,12 @@ Start instruction
 .instruction__paragraf4 {
   margin-left: 200px;
   position: relative;
-  left: 120px;
+  left: 100px;
 }
 
 .constructionContent .tourBlockItemBlockContent {
-  width: 840px;
+  max-width: 840px;
+  width: 100%;
   justify-content: flex-start;
 }
 
@@ -2090,7 +2108,8 @@ End instruction
   text-align: center;
   color: #434337;
   font: normal 300 22px 'Montserrat', sans-serif;
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
   margin: 20px auto 0;
 }
 
@@ -2295,9 +2314,35 @@ End instruction
   width: 100%;
 }
 
+.tourBlockItemBlockMobil__img {
+  display: none;
+}
+
 /*
 Start responsive
 ################*/
+@media (max-width: 1940px) {
+  .tourBlockItemBlock__img {
+    right: -40px;
+  }
+
+  .instruction__paragraf4 {
+    max-width: 736px;
+  }
+}
+
+@media (max-width: 1899px) {
+  .instruction__paragraf4 {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 1860px) {
+  .tourTitle__img {
+    top: 264px;
+  }
+}
+
 @media (max-width: 1800px) {
   .infoBlock {
     max-width: 95%;
@@ -2327,10 +2372,71 @@ Start responsive
   }
 }
 
+@media (max-width: 1780px) {
+  .tourTitle__img {
+    top: 264px;
+  }
+
+  .tourTitle__img2 {
+    top: -61px;
+  }
+
+  .tourBlockItemBlock__img {
+    right: 0;
+    width: 50%;
+  }
+
+  .tourBlockItemBlockMain {
+    max-width: 95%;
+  }
+
+  .instruction__paragraf4 {
+    max-width: 70%;
+  }
+
+  .instruction__paragraf3 {
+    max-width: 80%;
+  }
+
+  .instruction__paragraf2 {
+    max-width: 80%;
+  }
+
+  .instruction__img {
+    max-width: 55%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1705px) {
+  .instruction__paragraf3 {
+    max-width: 65%;
+  }
+
+  .instruction__paragraf4 {
+    max-width: 60%;
+  }
+
+  .instructionContent {
+    max-width: 98%;
+    width: 100%;
+  }
+
+  .instruction__img {
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 1700px) {
+  .tour,
+  .tourTitle,
   .answears,
   .reviews {
     max-width: 95%;
+  }
+
+  .tourTitle__img {
+    top: 233px;
   }
 
   .contact {
@@ -2394,6 +2500,22 @@ Start responsive
   .headerIn {
     max-width: 95%;
   }
+
+  .tourTitle__title {
+    height: 620px;
+  }
+
+  .tourBlockItem {
+    max-width: 32.5%;
+    font-size: 35px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1655px) {
+  .tourTitle__img {
+    top: 225px;
+  }
 }
 
 @media (max-width: 1620px) {
@@ -2437,6 +2559,16 @@ Start responsive
   }
 }
 
+@media (max-width: 1595px) {
+  .tourTitle__img {
+    top: 216px;
+  }
+
+  .constructionContent .tourBlockItemBlockContent {
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 1560px) {
   .infoBlockTopBlock2 {
     max-width: 59%;
@@ -2447,7 +2579,7 @@ Start responsive
     width: 100%;
   }
 
-  .headerRight__btn2 {
+  .infoBlockTopBlock2Info .headerRight__btn2 {
     margin-left: -120px;
   }
 
@@ -2518,6 +2650,29 @@ Start responsive
   .header {
     padding-top: 50px;
   }
+
+  .tourBlockItem {
+    height: 220px;
+  }
+
+  .tourBlockItemBlockContent {
+    max-width: 50%;
+  }
+
+  .tourBlockItemBlock__img {
+    max-width: 48%;
+  }
+
+  .tourBlockItemBlockContent__href {
+    background-size: contain;
+    height: 53px;
+  }
+}
+
+@media (max-width: 1530px) {
+  .tourTitle__img {
+    top: 200px;
+  }
 }
 
 @media (max-width: 1480px) {
@@ -2587,6 +2742,59 @@ Start responsive
     width: 100%;
     top: 100px;
   }
+
+  .instruction__img {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 1445px) {
+  .tourTitle__img {
+    top: 190px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .tourTitle__img {
+    top: 180px;
+  }
+
+  .tourTitle__img2 {
+    top: -74px;
+  }
+
+  .tourTitle {
+    max-width: 100%;
+  }
+
+  .tourTitle__title {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 410px;
+    height: 480px;
+  }
+
+  .tourBlockItem {
+    height: 190px;
+  }
+
+  .instruction__img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .instruction {
+    max-width: 95%;
+    height: auto;
+  }
+
+  .instructionRight {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1340px) {
@@ -2646,6 +2854,10 @@ Start responsive
     max-width: 81%;
     width: 100%;
   }
+
+  .tourTitle__img {
+    top: 167px;
+  }
 }
 
 @media (max-width: 1270px) {
@@ -2695,6 +2907,19 @@ Start responsive
 
   .infoBlockTopBlock2 {
     max-width: 62%;
+  }
+
+  .tourTitle__img {
+    top: 155px;
+  }
+
+  .headerRight .headerRight__btn {
+    font-size: 18px;
+  }
+
+  .tourBlockItem {
+    height: 165px;
+    font-size: 30px;
   }
 }
 
@@ -2762,6 +2987,24 @@ Start responsive
   .infoBlockTopBlock2 .headerRight__btn {
     font-size: 20px;
   }
+
+  .tourTitle__img {
+    top: 145px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .tourTitle__img2 {
+    top: -60px;
+  }
+
+  .headerRight .headerRight__btn {
+    font-size: 16px;
+  }
+
+  .tourBlockItem {
+    height: 150px;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -2825,6 +3068,31 @@ Start responsive
   .tourYarList__desc {
     font-size: 20px;
   }
+
+  .headerRight .headerRight__btn {
+    font-size: 17px;
+  }
+
+  .tourTitle__img {
+    top: 127px;
+  }
+
+  .tourTitle__title {
+    height: 410px;
+    position: relative;
+    top: -50px;
+  }
+
+  .constructionContent .tourBlockItemBlockContent {
+    max-width: 100%;
+  }
+
+  .tourBlockItemBlock__img {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -2873,6 +3141,19 @@ Start responsive
   .infoBlock {
     margin: 60px auto 0;
   }
+
+  .tourBlockItem {
+    font-size: 25px;
+    height: 130px;
+  }
+
+  .tourTitle__img2 {
+    top: -70px;
+  }
+
+  .headerRight .headerRight__btn {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1065px) {
@@ -2908,11 +3189,40 @@ Start responsive
   .reviews {
     height: 280px;
   }
+
+  .tourBlockItemBlockContent__href {
+    height: 40px;
+  }
+
+  .tourBlockItemBlockContent__href,
+  .tourBlockItemBlockList li span, .tourBlockItemBlockContent__pararaf {
+    font-size: 18px;
+  }
+
+  .tourBlockItemBlockContent__title {
+    font-size: 35px;
+  }
+
+  .tourBlockItemBlock__img {
+    top: 50px;
+  }
+
+  .tourRuss .tourBlockItemBlock {
+    min-height: 370px;
+  }
+
+  .constructionContent .tourBlockItemBlock__img {
+    top: 0;
+  }
 }
 
 @media (max-width: 1055px) {
   .header__img2 {
     right: -289px;
+  }
+
+  .tourTitle__img {
+    top: 115px;
   }
 }
 
@@ -2979,6 +3289,14 @@ Start responsive
 
   .popupBlockMenuInfo {
     display: none;
+  }
+
+  .headerRight .headerRight__btn {
+    font-size: 18px;
+  }
+
+  .tourTitle__img2 {
+    top: -66px;
   }
 }
 
@@ -3070,6 +3388,78 @@ Start responsive
     right: -310px;
     top: 30px;
   }
+
+  .tourTitle__img2 {
+    top: -56px;
+  }
+
+  .breadcrumb {
+    margin-top: 120px;
+  }
+
+  .tourTitle__title {
+    font-size: 330px;
+    height: 390px;
+  }
+
+  .tourBlockItem {
+    font-size: 20px;
+  }
+
+  .tourBlock {
+    margin-top: 50px;
+  }
+
+  .tour {
+    margin: 50px auto 0;
+  }
+
+  .tourBlockTop__modif {
+    margin-top: 0;
+  }
+
+  .tourBlockTop {
+    margin: 0 auto 30px;
+  }
+
+  .tourBlockItem__biaric:after, .tourBlockItem__maroco:after,
+  .tourBlockItem__yar:after,
+  .tourBlockItem__itali:after, .tourBlockItem__espaniol:after {
+    width: 60px;
+    height: 60px;
+    content: '';
+  }
+
+  .tourBlockItem__espaniol:after {
+    background: url('../images/icon27.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .tourBlockItem__itali:after {
+    background: url('../images/icon28.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .tourBlockItem__yar:after {
+    background: url('../images/icon29.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .tourBlockItem__maroco:after {
+    background: url('../images/icon30.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .tourBlockItem__biaric:after {
+    background: url('../images/icon31.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .tourBlockItem__biaric,
+  .tourBlockItem__maroco,
+  .tourBlockItem__yar {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 915px) {
@@ -3157,7 +3547,9 @@ Start responsive
 }
 
 @media (max-width: 880px) {
-  .headerRight__btn, .headerRight__phone, .headerMenu li a {
+  .headerRight__btn,
+  .headerRight__phone,
+  .headerMenu li a {
     font-size: 16px;
   }
 
@@ -3193,6 +3585,22 @@ Start responsive
   .tourYarMain__pararaf {
     padding-left: 0;
   }
+
+  .instruction__paragraf2 {
+    max-width: 80%;
+    left: 0;
+    margin-left: 63px;
+  }
+
+  .instruction__paragraf3 {
+    max-width: 80%;
+    left: 0;
+  }
+
+  .instruction__paragraf4 {
+    max-width: 74%;
+    left: 0;
+  }
 }
 
 @media (max-width: 845px) {
@@ -3223,6 +3631,14 @@ Start responsive
 
   .tourYarList__desc {
     font-size: 18px;
+  }
+
+  .tourTitle__img2 {
+    top: -37px;
+  }
+
+  .headerRight .headerRight__btn {
+    font-size: 16px;
   }
 }
 
@@ -3310,6 +3726,33 @@ Start responsive
   .infoBlockTopBlock2Info__info {
     font-size: 50px;
   }
+
+  .tourTitle__title {
+    height: 340px;
+  }
+
+  .tourTitle__img2 {
+    top: -31px;
+  }
+
+  .tourBlockItem {
+    font-size: 16px;
+    height: 100px;
+  }
+
+  .instruction__paragraf4 {
+    margin-left: 100px;
+  }
+
+  .instruction__paragraf2 {
+    max-width: 89%;
+    margin-left: 30px;
+  }
+
+  .instruction__paragraf3 {
+    max-width: 85%;
+    margin-left: 60px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -3350,6 +3793,10 @@ Start responsive
 
   .header__img2 {
     right: -247px;
+  }
+
+  .tourTitle__img2 {
+    top: -27px;
   }
 }
 
@@ -3436,11 +3883,56 @@ Start responsive
   .answearsItem__title span {
     font-size: 60px;
   }
+
+  .tourTitle__title {
+    font-size: 250px;
+    top: -30px;
+  }
+
+  .tourTitle__img2 {
+    top: -17px;
+  }
+
+  .tourBlockItemBlockContent__href, .tourBlockItemBlockList li span, .tourBlockItemBlockContent__pararaf {
+    font-size: 14px;
+  }
+
+  .tourBlockItemBlockContent__title {
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+
+  .tourBlockItemBlockContent__href {
+    height: 32px;
+    margin-top: 0;
+  }
+
+  .tourBlockItemBlockContent {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 690px) {
+  .tourTitle__img2 {
+    top: -8px;
+  }
+
+  .instruction__paragraf {
+    font-size: 18px;
+  }
+
+  .instruction {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 680px) {
-  .instruction__title, .tourTitle__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
+  .instruction__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
     font-size: 80px;
+  }
+
+  .tourTitle__title {
+    font-size: 250px;
   }
 
   .header {
@@ -3472,7 +3964,7 @@ Start responsive
     width: 100%;
   }
 
-  .instruction__title, .tourTitle__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
+  .instruction__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
     font-size: 60px;
   }
 
@@ -3580,6 +4072,18 @@ Start responsive
   .infoBlockBottom__href {
     background-size: contain;
   }
+
+  .bgHeader:before {
+    height: 180px;
+  }
+
+  .breadcrumb {
+    margin-top: 60px;
+  }
+
+  .bread {
+    background-size: 100% 75%;
+  }
 }
 
 @media (max-width: 655px) {
@@ -3671,6 +4175,27 @@ Start responsive
 
   .tourYarMain__pararaf {
     padding: 0 20px;
+  }
+
+  .tourTitle__img {
+    top: 100px;
+  }
+
+  .tourTitle__title {
+    height: 290px;
+  }
+
+  .tourBlockItem {
+    font-size: 14px;
+    height: 85px;
+  }
+
+  .tourBlockItemBlockContent {
+    min-height: 320px;
+  }
+
+  .tourBlockItemBlockContent__href {
+    height: 30px;
   }
 }
 
@@ -3782,6 +4307,48 @@ Start responsive
     max-width: 100%;
     width: 100%;
   }
+
+  .tourTitle__title {
+    font-size: 220px;
+  }
+
+  .tourTitle__img2 {
+    top: -3px;
+  }
+
+  .tour {
+    margin: 0 auto;
+  }
+
+  .tourBlockItem {
+    font-size: 12px;
+  }
+
+  .tourBlockItemBlockContent {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tourBlockItemBlock__img {
+    display: none;
+  }
+
+  .tourRuss .tourBlockItemBlock {
+    min-height: 316px;
+  }
+
+  .tourBlockItemBlockMobil__img {
+    display: block;
+    margin-right: -10.7%;
+  }
+
+  .tourBlockItemBlockContent__href, .tourBlockItemBlockList li span, .tourBlockItemBlockContent__pararaf {
+    margin: 20px 0;
+  }
+
+  .constructionContent .tourBlockItemBlock__img{
+    display: block;
+  }
 }
 
 @media (max-width: 550px) {
@@ -3889,7 +4456,7 @@ Start responsive
     margin-top: 20px;
   }
 
-  .instruction__title, .tourTitle__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
+  .instruction__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
     font-size: 60px;
   }
 
@@ -3938,6 +4505,12 @@ Start responsive
 
   .reviews {
     margin: 40px auto 0;
+  }
+
+  .tourTitle__title {
+    height: 266px;
+    font-size: 190px;
+    top: -20px;
   }
 }
 
@@ -4048,6 +4621,61 @@ Start responsive
 
   .wrapIn {
     padding-bottom: 0;
+  }
+
+  .tourBlockItem {
+    max-width: 100%;
+    height: 200px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tourRuss .tourBlockItem {
+    height: 150px;
+  }
+
+  .tourBlockTop {
+    margin: 0 auto;
+  }
+
+  .tourBlockTop__modif .tourBlockItem {
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  .tourBlockItem__biaric:after, .tourBlockItem__maroco:after,
+  .tourBlockItem__yar:after,
+  .tourBlockItem__itali:after, .tourBlockItem__espaniol:after {
+    top: -15px;
+    left: 75px;
+  }
+
+  .tourBlockTop:last-of-type .tourBlockItem {
+    margin-top: 0;
+  }
+
+  .tour {
+    margin-bottom: 70px;
+  }
+
+  .tourBlockItemBlockContent__href, .tourBlockItemBlockList li span, .tourBlockItemBlockContent__pararaf {
+    font-size: 13px;
+  }
+
+  .tourBlockItemBlockContent__title {
+    font-size: 20px;
+  }
+
+  .tourRuss .tourBlockItem {
+    height: 134px;
+  }
+
+  .instruction__paragraf {
+    font-size: 13px;
+  }
+
+  .instruction {
+    margin: 40px auto 0;
   }
 }
 
@@ -4214,6 +4842,21 @@ Start responsive
 
   .answearsItem__title {
     font-size: 13px;
+  }
+
+  .instruction__paragraf2 {
+    max-width: 95%;
+    margin-left: 18px;
+  }
+
+  .instruction__paragraf3 {
+    max-width: 90%;
+    margin-left: 35px;
+  }
+
+  .instruction__paragraf4 {
+    margin-left: 50px;
+    max-width: 90%;
   }
 }
 
