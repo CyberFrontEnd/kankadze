@@ -2782,6 +2782,10 @@ Start responsive
     margin-left: 10px;
   }
 
+  .infoBlockTopBlock2Info .headerRight__btn2 {
+    margin-left: -113px;
+  }
+
   .logo {
     max-width: 14%;
     width: 100%;
@@ -2862,7 +2866,7 @@ Start responsive
     max-width: 41%;
   }
 
-  .headerRight__btn2 {
+  .infoBlockTopBlock2Info .headerRight__btn2 {
     margin-left: -115px;
   }
 
@@ -3258,6 +3262,53 @@ Start responsive
     position: absolute;
     margin: 0 auto;
     left: 0;
+    right: 0;
+    top: -80px;
+    background: url('../images/icon21.svg') no-repeat top center;
+  }
+
+  .infoBlock {
+    margin: 150px auto 0;
+  }
+
+  .infoBlockTopBlock2Info {
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .infoBlockTopBlock__title, .infoBlockTop__title {
+    font-size: 25px;
+    display: block;
+  }
+
+  .infoBlockTopBlock2 .headerRight__btn {
+    font-size: 23px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  .infoBlockTopBlockInfo {
+    margin: 0 auto;
+  }
+
+  .infoBlockTopBlockInfo__title {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .infoBlockTopBlockInfo__desc span {
+    display: block;
+    text-align: center;
+  }
+
+  .infoBlockTopBlockInfo__desc {
+    text-align: center;
+  }
+
+  .infoBlockTopBlock2Info__info {
+    font-size: 50px;
   }
 }
 
@@ -3525,6 +3576,10 @@ Start responsive
   .descriptions__paragraf {
     font-size: 18px;
   }
+
+  .infoBlockBottom__href {
+    background-size: contain;
+  }
 }
 
 @media (max-width: 655px) {
@@ -3785,8 +3840,17 @@ Start responsive
     padding-top: 8px;
   }
 
-  .bread li a, .bread li span {
+  .bread li a,
+  .bread li span {
     font-size: 13px;
+  }
+
+  .bread li a:after {
+    width: 9px;
+  }
+
+  .tourYar {
+    margin: 40px auto 0;
   }
 
   .bread {
@@ -4015,6 +4079,33 @@ Start responsive
 
   .answearsItem:nth-child(4) .answearsItem__text {
     max-width: 70%;
+  }
+
+  .infoBlockBottom__href {
+    margin-bottom: -10px;
+    max-width: 95%;
+  }
+
+  .infoBlockBottom__href span {
+    font-size: 13px;
+  }
+
+  .infoBlockBottom {
+    margin-top: 80px;
+  }
+
+  .infoBlockTopBlock2 .headerRight__btn {
+    font-size: 20px;
+    max-width: 240px;
+    background-size: contain;
+  }
+
+  .infoBlockTopBlock__title, .infoBlockTop__title {
+    font-size: 20px;
+  }
+
+  .tourYarList li {
+    margin-bottom: 55px;
   }
 }
 
