@@ -1264,21 +1264,24 @@ Start swipeSlider
 }
 
 .mySwiper {
-  width: 1190px;
+  max-width: 1190px;
+  width: 100%;
   height: 1065px;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
 
 .swipeSliderWidth {
-  width: 1644px;
+  max-width: 1644px;
+  width: 100%;
   margin: 0 auto;
   height: 1065px;
   justify-content: flex-start;
 }
 
 .swipeSliderBlock {
-  width: 1190px;
+  max-width: 1190px;
+  width: 100%;
   height: 1235px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1310,7 +1313,8 @@ Start swipeSlider
 
 .swiperNaviation {
   position: relative;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
   margin-top: -90px;
   height: 80px;
 }
@@ -2015,7 +2019,7 @@ Start tourTitle
 
 .tourTitle__img2 {
   position: absolute;
-  top: -75px;
+  top: -71px;
   left: 0;
   z-index: 9;
 }
@@ -2337,9 +2341,26 @@ Start responsive
   }
 }
 
+@media (max-width: 1885px) {
+  .tourTitle__img2 {
+    top: -64px;
+  }
+}
+
 @media (max-width: 1860px) {
   .tourTitle__img {
     top: 264px;
+  }
+
+  .constructionContent .tourBlockItemBlock__img {
+    max-width: 52%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1836px) {
+  .tourTitle__img2 {
+    top: -70px;
   }
 }
 
@@ -2425,9 +2446,14 @@ Start responsive
   .instruction__img {
     max-width: 50%;
   }
+
+  .tourTitle__img2 {
+    top: -49px;
+  }
 }
 
 @media (max-width: 1700px) {
+  .mySwiper,
   .tour,
   .tourTitle,
   .answears,
@@ -2509,6 +2535,32 @@ Start responsive
     max-width: 32.5%;
     font-size: 35px;
     background-size: contain;
+  }
+
+  .constructionContent .tourBlockItemBlockContent {
+    max-width: 50%;
+  }
+
+  .instruction {
+    height: 825px;
+  }
+
+  .swipeSliderWidth {
+    max-width: 95%;
+  }
+
+  .swipeSliderBlock {
+    max-width: 79%;
+  }
+
+  .swipeSliderBlock__paragraf {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1688px) {
+  .tourTitle__img2 {
+    top: -61px;
   }
 }
 
@@ -2752,6 +2804,24 @@ Start responsive
   .tourTitle__img {
     top: 190px;
   }
+
+  .tourBlockItemBlockContent__title {
+    font-size: 35px;
+  }
+
+  .tourBlockItemBlockList li span, .tourBlockItemBlockContent__pararaf {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1395px) {
+  .tourTitle__img2 {
+    top: -54px;
+  }
+
+  .tourTitle__title {
+    font-size: 440px;
+  }
 }
 
 @media (max-width: 1390px) {
@@ -2798,6 +2868,10 @@ Start responsive
 }
 
 @media (max-width: 1340px) {
+  .swipeSliderBlock__paragraf {
+    font-size: 18px;
+  }
+
   .reviews__paragraf {
     max-width: 50%;
   }
@@ -2857,6 +2931,10 @@ Start responsive
 
   .tourTitle__img {
     top: 167px;
+  }
+
+  .reviewsMain .reviews__paragraf {
+    max-width: 70%;
   }
 }
 
@@ -3005,6 +3083,10 @@ Start responsive
   .tourBlockItem {
     height: 150px;
   }
+
+  .tourTitle__title {
+    font-size: 330px;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -3095,6 +3177,12 @@ Start responsive
   }
 }
 
+@media (max-width: 1090px) {
+  .tourTitle__title {
+    top: -15px;
+  }
+}
+
 @media (max-width: 1080px) {
   .footerTopLeft {
     max-width: 350px;
@@ -3153,6 +3241,14 @@ Start responsive
 
   .headerRight .headerRight__btn {
     font-size: 15px;
+  }
+
+  .constructionContent .tourBlockItemBlockContent {
+    margin-bottom: 0;
+  }
+
+  .constructionContent .tourBlockItemBlock__img {
+    max-width: 100%;
   }
 }
 
@@ -3227,7 +3323,6 @@ Start responsive
 }
 
 @media (max-width: 1035px) {
-
   .header__img2 {
     right: -301px;
   }
@@ -3244,6 +3339,31 @@ Start responsive
 
   .worldTravelMain {
     height: auto;
+  }
+
+  .swipeSlider {
+    background: url('../images/bg8.png') no-repeat top center;
+    background-size: cover;
+    height: 3200px;
+  }
+
+  .swipeSliderWidth {
+    max-width: 93%;
+    margin: 66px auto;
+  }
+
+  .swipeSliderBlock {
+    max-width: 100%;
+  }
+
+  .mySwiper {
+    margin-top: 1200px;
+    height: auto;
+  }
+
+  .swipeSliderBlock__paragraf {
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -3301,6 +3421,10 @@ Start responsive
 }
 
 @media (max-width: 970px) {
+  .swiperNaviation {
+    margin-top: 0;
+  }
+
   .worldTravelLeft {
     padding-top: 0;
   }
@@ -3460,6 +3584,14 @@ Start responsive
   .tourBlockItem__yar {
     margin-top: 40px;
   }
+
+  .swipeSlider {
+    height: 2900px;
+  }
+
+  .mySwiper {
+    margin-top: 1030px;
+  }
 }
 
 @media (max-width: 915px) {
@@ -3600,6 +3732,14 @@ Start responsive
   .instruction__paragraf4 {
     max-width: 74%;
     left: 0;
+  }
+
+  .tourTitle__title {
+    font-size: 260px;
+  }
+
+  .tourTitle__img2 {
+    top: -42px;
   }
 }
 
@@ -3910,6 +4050,29 @@ Start responsive
   .tourBlockItemBlockContent {
     min-height: 300px;
   }
+
+  .swipeSlider {
+    height: 2200px;
+  }
+
+  .mySwiper {
+    margin-top: 590px;
+  }
+
+  .swipeSliderBlock__paragraf {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .swiperNaviation {
+    margin: 0 auto;
+    position: relative;
+    top: -63px;
+  }
+
+  .reviewsMain .reviews__paragraf {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 690px) {
@@ -4084,6 +4247,11 @@ Start responsive
   .bread {
     background-size: 100% 75%;
   }
+
+  .reviewsMain .reviews__paragraf {
+    margin-top: 20px;
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 655px) {
@@ -4196,6 +4364,16 @@ Start responsive
 
   .tourBlockItemBlockContent__href {
     height: 30px;
+  }
+}
+
+@media (max-width: 625px) {
+  .tourTitle__title {
+    font-size: 220px;
+  }
+
+  .tourTitle__img2 {
+    top: -16px;
   }
 }
 
@@ -4346,8 +4524,16 @@ Start responsive
     margin: 20px 0;
   }
 
-  .constructionContent .tourBlockItemBlock__img{
+  .constructionContent .tourBlockItemBlock__img {
     display: block;
+  }
+
+  .swipeSliderBlock__title {
+    font-size: 35px;
+  }
+
+  .swipeSliderBlock__paragraf {
+    font-size: 16px;
   }
 }
 
@@ -4677,6 +4863,44 @@ Start responsive
   .instruction {
     margin: 40px auto 0;
   }
+
+  .tourTitle__img,
+  .tourTitle__img2 {
+    display: none;
+  }
+
+  .tourTitle__title {
+    font-size: 200px;
+  }
+
+  .tourTitle:before {
+    content: "";
+    display: block;
+    background: url(../images/mobil.png) no-repeat top center;
+    height: 310px;
+    width: 98%;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    top: 70px;
+  }
+
+  .tourTitle:after {
+    content: "";
+    display: block;
+    background: url(../images/mobil2.png) no-repeat top center;
+    height: 332px;
+    width: 98%;
+    position: absolute;
+    left: -10px;
+    background-size: cover;
+    top: 48px;
+    z-index: 9;
+  }
+
+  .tourTitle {
+    height: 400px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -4813,6 +5037,52 @@ Start responsive
   .answearsItem:nth-child(3) .answearsItem__text {
     max-width: 83%;
   }
+
+  .tourTitle__title {
+    font-size: 180px;
+  }
+
+  .swipeSliderBlock__title {
+    font-size: 20px;
+  }
+
+  .swipeSliderBlock__paragraf {
+    font-size: 12px;
+  }
+
+  .swipeSlider {
+    height: 1500px;
+  }
+
+  .mySwiper {
+    margin-top: 215px;
+  }
+
+  .swiperNaviation {
+    top: -240px;
+  }
+}
+
+@media (max-width: 485px) {
+  .tourTitle:before {
+    height: 290px;
+  }
+
+  .tourTitle:after {
+    height: 311px;
+    left: -7px;
+  }
+}
+
+@media (max-width: 455px) {
+  .tourTitle:before {
+    left: -5px;
+  }
+
+  .tourTitle:after {
+    left: -12px;
+    top: 52px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -4858,9 +5128,55 @@ Start responsive
     margin-left: 50px;
     max-width: 90%;
   }
+
+  .tourTitle:before {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 436px) {
+  .tourTitle:after {
+    height: 289px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tourTitle:after {
+    height: 280px;
+    top: 52px;
+  }
+}
+
+@media (max-width: 415px) {
+  .tourTitle:after {
+    height: 273px;
+  }
+}
+
+@media (max-width: 410px) {
+  .tourTitle:after {
+    height: 270px;
+    top: 52px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tourTitle:after {
+    height: 262px;
+  }
 }
 
 @media (max-width: 390px) {
+  .tourTitle:after {
+    background-size: contain;
+    top: 54px;
+    height: 257px;
+  }
+
+  .tourTitle {
+    height: 350px;
+  }
+
   .why {
     height: 930px;
   }
@@ -4975,6 +5291,14 @@ Start responsive
   .answearsItem:nth-child(11) {
     margin-left: 60px;
   }
+
+
+}
+
+@media (max-width: 375px) {
+  .tourTitle:after {
+    height: 249px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -4998,6 +5322,10 @@ Start responsive
   .reviews__title {
     max-width: 155px;
   }
+
+  .tourTitle:after {
+    height: 243px;
+  }
 }
 
 @media (max-width: 355px) {
@@ -5013,7 +5341,9 @@ Start responsive
     max-width: 130px;
   }
 
-  .instruction__title, .tourTitle__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
+  .instruction__title, .tour__title, .descriptions__title, .tourYar__title, .reviews__title, .popupBlock__title, .contact__title, .ourService__title, .footerTopRight__title, .selectedTours__title, .worldTravelLeft__title {
     font-size: 35px;
   }
+
+
 }
