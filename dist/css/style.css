@@ -1928,7 +1928,7 @@ a.tourBlockItem:hover span {
 
 .tourBlockItemBlock__img {
   position: absolute;
-  right: -110px;
+  right: -140px;
   top: 0;
 }
 
@@ -2331,7 +2331,7 @@ Start responsive
 ################*/
 @media (max-width: 1940px) {
   .tourBlockItemBlock__img {
-    right: -40px;
+    right: -90px;
   }
 
   .instruction__paragraf4 {
@@ -2571,6 +2571,9 @@ Start responsive
 }
 
 @media (max-width: 1688px) {
+  .wrap{
+    overflow: hidden;
+  }
   .tourTitle__img2 {
     top: -61px;
   }
@@ -3242,6 +3245,8 @@ Start responsive
   .tourTitle__title {
     top: -15px;
   }
+
+
 }
 
 @media (max-width: 1080px) {
@@ -4640,10 +4645,6 @@ Start responsive
     margin-bottom: 10px;
   }
 
-  .tourBlockItemBlock__img {
-    display: none;
-  }
-
   .tourRuss .tourBlockItemBlock {
     min-height: 316px;
   }
@@ -5101,6 +5102,10 @@ Start responsive
 
   .tourBlockContentMobil {
     display: block;
+  }
+
+  .tourBlockItemBlock__img {
+    display: none;
   }
 }
 
